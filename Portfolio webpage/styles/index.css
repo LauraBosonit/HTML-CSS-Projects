@@ -4,11 +4,33 @@ body {
     padding: 0%;
 }
 
+#calculator {
+    grid-column: 3/-1;
+    grid-row: 1/2;
+}
+
+figcaption {
+    background-color: #2F3133;
+    padding: 20px 0px;
+    width: 400px;
+}
+
 #header {
     background-color: #BE3144;
     position: fixed;
     width: 100vw;
 } 
+
+.hidden {
+    color: #2F3133;
+}
+
+.project-tile:hover .hidden { color: rgb(244, 108, 58);  transition: all 1s}
+
+#mapData {
+    grid-column: 1/2;
+    grid-row: 2/-1;
+}
 
 #navbar {
     position: relative;
@@ -19,12 +41,111 @@ body {
 #navbar ul {
     display: flex;
     justify-content: space-around;
-    padding: 0%;
     list-style-type: none;
+    padding: 5px 0%;
 }
 
 #navbar a {
     color: rgb(232, 232, 232);
     font-size: 23px;
     text-decoration: none;
+}
+
+#projects {
+    background-color: #45567D;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0%;
+    padding: 0%;
+    min-height: 100vh; 
+    width: auto;
+    border: 1px solid red;
+}
+
+#projects h2 {
+    color: white;
+    font-size: 42px;
+    padding-top: 60px;
+    text-decoration: underline;
+}
+
+#projectsBtn {
+    background-color: #2F3133;
+    font-size: 20px;
+    padding: 15px 30px;
+    margin: 50px 0px;
+}
+
+#projectsBtn:hover { background-color: #BE3144; transition: all 0.5s;}
+
+#projectsBtn a {
+    color: white;
+    text-decoration: none;
+}
+
+#projectsContainer {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 430px));
+    grid-template-rows: repeat(2, auto);
+    width: 70%;
+}
+
+#projectsContainer a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+#projectsContainer img {
+    height: 389.69px;
+    margin: 0%;
+    object-fit: cover;
+    margin-bottom: -10px;
+    width: 400px;
+}
+
+#quoteMachine {
+    grid-column: 2/3;
+    grid-row: 1/2; 
+}
+
+#ticTacToe {
+    grid-column: 3/-1;
+    grid-row: 2/-1;;
+}
+
+#tributePage {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+#welcome-section {
+    align-items: center;
+    background-color: #2F3133;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    width: auto;
+}
+
+#welcome-section h1 {
+    color: white;
+    font-size: 50px;
+    margin-bottom: 0px;
+}
+
+#welcome-section p {
+    color: #BE3144;
+    font-size: 30px;
+    font-style: italic;
+    margin-top: 5px;
+}
+
+#wikipediaViewer {
+    grid-column: 2/3;
+    grid-row: 2/-1;
 }
