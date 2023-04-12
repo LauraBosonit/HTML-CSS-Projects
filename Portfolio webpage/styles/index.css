@@ -1,0 +1,30 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0%;
+    padding: 0%;
+}
+
+#header {
+    background-color: #BE3144;
+    position: fixed;
+    width: 100vw;
+} 
+
+#navbar {
+    position: relative;
+    left: 80%;
+    width: 18%;
+}
+
+#navbar ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 0%;
+    list-style-type: none;
+}
+
+#navbar a {
+    color: rgb(232, 232, 232);
+    font-size: 23px;
+    text-decoration: none;
+}
